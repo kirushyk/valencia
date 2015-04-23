@@ -27,7 +27,7 @@ void append_with_tag(Gtk.TextBuffer buffer, string text, Gtk.TextTag? tag) {
     Gtk.TextIter end;
     buffer.get_end_iter(out end);
     if (tag != null)
-        buffer.insert_with_tags(end, text, -1, tag);
+        buffer.insert_with_tags(ref end, text, -1, tag);
     else
         buffer.insert(ref end, text, -1);
 }
