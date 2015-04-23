@@ -8,7 +8,7 @@ VALAC = valac
 endif
 
 ifndef LIBVALA
-LIBVALA=libvala-0.26
+LIBVALA=libvala-0.28
 endif
 
 VALAC_VERSION := `$(VALAC) --version | awk '{print $$2}'`
